@@ -83,6 +83,7 @@
 
 }
 .container__hero-heading{
+    width: 540px;
     max-width: 540px;
     font-style: normal;
     font-weight: 700;
@@ -196,7 +197,7 @@
     .container__hero-heading{
         width: 100%;
         font-size: 40px;
-        line-height: 112%;
+        line-height: 100%;
     }
     .container__hero-img{
         font-size: 14px;
