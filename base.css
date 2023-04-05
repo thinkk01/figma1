@@ -11,7 +11,20 @@ html{
 :root{
     --white-color:#fff;
     --text-color:#272D38;
+    /* --background-color:red; */
     --background-color:#F6F6F6;
+    --border-color:#DEDCDB;
+
+}
+
+.row{
+    margin-bottom: 24px;
+}
+.first{
+    max-width: 190px;
+}
+a{
+    text-decoration: none;
 }
 .flex-box{
     display: flex;

@@ -91,7 +91,7 @@
     color: var(--text-color);
     text-transform: capitalize;
 }
-/* section */
+/* section logo */
 .container__sections{
     margin-bottom: 155px;
 }
@@ -106,14 +106,19 @@
 }
 .container__sections-logo{
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     width: 915px;
     height: 86px;
-    min-width: 90%;
+    max-width: 90%;
     align-items: center;
     margin: 0 auto;
-    font-size: 1.5rem;
     padding: 24px;
+}
+.container__sections-logo-spotify,
+.container__sections-logo-slack,
+.container__sections-logo-dropbox,
+.container__sections-logo-zoom{
+    margin: 0 auto;
 }
 .container__sections-logo svg{
     cursor: pointer;
@@ -122,6 +127,8 @@
     width: 130px;
     border-radius: 50%;
     margin: 32px auto 8px;
+    border: 1px solid var(--border-color);
+
 }
 .container__hero-text{
     max-width: 435px;
@@ -135,10 +142,6 @@
 .container__hero-clients{
     margin-top: 39px;
     /* padding: 39px; */
-
-}
-a{
-    text-decoration: none;
 }
 .container__hero-client-history{
     font-size: 14px;
@@ -167,35 +170,31 @@ a{
     line-height: 24px;
     line-height: 150%;
 }
-.row{
-    margin-bottom: 24px;
-}
-.first{
-    max-width: 190px;
-}
-
 /* Responsive */
-@media only screen and (max-width: 739px){
+@media only screen and (max-width: 740px){
     body{
         text-align: center;
     }
     .container__navbar-menu{
         display: block;
     }
-    .fs-48,
     .container__navbar-list{
         display: none;
     }
     .container__hero-img img{
         margin-top: 48px;
         height: 100%;
+
+    }
+    .container__hero{
+        justify-content: center;
     }
     .container__hero,
     .container__hero-clients{
         flex-wrap: wrap;
     }
     .container__hero-heading{
-        width: 378px;
+        width: 100%;
         font-size: 40px;
         line-height: 112%;
     }
@@ -226,7 +225,7 @@ a{
         width: 100% !important;
     }
     .container__hero-client{
-        margin-bottom: 15px;
+        margin: 0 0 15px 0 !important;
     }
     .container__hero-client{
         flex: 1;
